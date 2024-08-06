@@ -14,35 +14,35 @@ module.exports = {
     process.env.HANDLER === "false" || process.env.HANDLER === "null"
       ? "^"
       : "[#]",
-  RMBG_KEY: process.env.RMBG_KEY || false,
+  RMBG_KEY: process.env.RMBG_KEY || true,
   BRANCH: "main",
   WARN_COUNT: 3,
-  PACKNAME: process.env.PACKNAME || "X-Asena",
+  PACKNAME: process.env.PACKNAME || "😝💗",
   WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
   GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
-  AUTHOR: process.env.AUTHOR || "X-Electra",
+  AUTHOR: process.env.AUTHOR || "Jeff💗",
   SUDO:
-    process.env.SUDO || "918113921898,919598157259,918590508376,919383400679",
+    process.env.SUDO || "917090462940,918431403667,639519330533,27688408036",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
-  OWNER_NAME: process.env.OWNER_NAME || "Neeraj-X0",
+  OWNER_NAME: process.env.OWNER_NAME || "Jeff",
   HEROKU: toBool(process.env.HEROKU) || false,
-  BOT_NAME: process.env.BOT_NAME || "X-Asena",
+  BOT_NAME: process.env.BOT_NAME || "BUBBA-Ai",
   AUTO_READ: toBool(process.env.AUTO_READ) || false,
-  AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
-  PROCESSNAME: process.env.PROCESSNAME || "x-asena",
+  AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true,
+  PROCESSNAME: process.env.PROCESSNAME || "Jeff Pvt Bot",
   WORK_TYPE: process.env.WORK_TYPE || "private",
   SESSION_URL: process.env.SESSION_URL || "",
   DELETED_LOG: toBool(process.env.DELETED_LOG) || false,
   DELETED_LOG_CHAT: process.env.DELETED_LOG_CHAT || false,
-  REMOVEBG: process.env.REMOVEBG || false,
+  REMOVEBG: process.env.REMOVEBG || true,
   DATABASE_URL: DATABASE_URL,
   STATUS_SAVER: toBool(process.env.STATUS_SAVER) || true,
   DATABASE:
     DATABASE_URL === "./assets/database.db"
       ? new Sequelize({
           dialect: "sqlite",
-          storage: DATABASE_URL,
+          storage: DATABASE_URL,postgresql://vfxartistjeff_gmail_:jge3e0FKqEjxCpLn32nMZw@barn-sunbear-5636.7s5.aws-ap- south 1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full
           logging: false,
         })
       : new Sequelize(DATABASE_URL, {
